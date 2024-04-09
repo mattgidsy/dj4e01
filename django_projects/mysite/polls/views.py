@@ -11,7 +11,7 @@ def index(request):
     context = {
         "latest_question_list": latest_question_list,
     }
-    return HttpResponse(context, request)
+    return HttpResponse(template.render(context, request))
 
 def owner(request):
    return HttpResponse("Hello, world. 5a77cde0 is the polls index.")
