@@ -21,8 +21,8 @@ def detail(request, question_id):
 def owner(request):
    return HttpResponse("Hello, world. 5a77cde0 is the polls index.")
 
-def detail(request, question_id):
-    return HttpResponse(f"You're looking at question {question_id}.")
+# def detail(request, question_id):
+#     return HttpResponse(f"You're looking at question {question_id}.")
 
 def results(request, question_id):
     response = f"You're looking at the results of question {question_id}."
